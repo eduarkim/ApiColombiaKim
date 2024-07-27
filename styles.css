@@ -1,0 +1,92 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+ 
+    background-image: url(https://thumbs.dreamstime.com/z/imagen-representativa-de-colombia-160143695.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#departments-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.department-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 15px;
+    width: 200px;
+    text-align: center;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+
+.card {
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+img {
+    transition: transform 0.2s;
+}
+
+img:hover {
+    transform: scale(3);
+}
+
+.nav-link {
+    transition: font-size 0.3s ease;
+}
+
+.nav-link:hover {
+    font-size: 1.2em; 
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+
+.department-card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px;
+    text-align: center;
+}
+
+#imagenhome{
+    width:8rem;
+    margin-right: 0;
+}

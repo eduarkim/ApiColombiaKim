@@ -28,7 +28,7 @@ fetch(url)
                     <td>${specie.impact}</td>
                     <td>${specie.manage}</td>
                     <td>${riskLevel}</td>
-                    <td><img src="${specie.urlImage}" alt="${specie.name}" class="img-thumbnail"></td>
+                    <td><img src="${specie.urlImage}" alt="${specie.name}" class="img-thumbnail" id="imgtabla"></td>
                 `;
 
             tableBody.appendChild(row);

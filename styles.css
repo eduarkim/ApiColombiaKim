@@ -48,19 +48,19 @@ button:hover {
 
 
 
-.card {
+/* .card {
     transition: transform 0.2s;
 }
 
 .card:hover {
     transform: scale(1.05);
-}
+} */
 
-img {
+#imgtabla {
     transition: transform 0.2s;
 }
 
-img:hover {
+#imgtabla:hover {
     transform: scale(3);
 }
 

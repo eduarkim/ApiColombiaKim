@@ -2,8 +2,8 @@ const params = new URLSearchParams(window.location.search);
 const departmentId = params.get('department'); // Obtener el ID del departamento de la URL
 const apiUrl = `https://api-colombia.com/api/v1/Department/${departmentId}`; // URL de la API para obtener detalles del departamento
 const citiesUrl = `https://api-colombia.com/api/v1/Department/${departmentId}/cities`; // URL para obtener ciudades del departamento
-const naturalAreasUrl = `https://api-colombia.com/api/v1/Department/${departmentId}/naturalareas`; // URL para obtener áreas naturales del departamento
-//const naturalAreasUrl = `https://api-colombia.com/api/v1/NaturalArea`; // URL para obtener áreas naturales del departamento
+//const naturalAreasUrl = `https://api-colombia.com/api/v1/Department/${departmentId}/naturalareas`; // URL para obtener áreas naturales del departamento
+const naturalAreasUrl = `https://api-colombia.com/api/v1/NaturalArea`; // URL para obtener áreas naturales del departamento
 // Función para obtener los detalles del departamento
 fetch(apiUrl)
     .then(response => response.json())
@@ -167,6 +167,8 @@ fetch(apiUrl)
                     areasContainer.appendChild(areaCard);
                 });
             });
+
+            
     }
 
     function normalizeString(str) {

@@ -131,7 +131,7 @@ fetch(apiUrl)
                     cityCard.className = 'col-12 col-md-6 col-lg-3 mb-4 city-card';
 
                              // Obtener la imagen correspondiente a la ciudad
-            const imageUrl = cityImages[city.name.toLowerCase()] || 'https://example.com/default.jpg'; // URL por defecto si no hay imagen
+            const imageUrl = cityImages[city.name.toLowerCase()] || 'https://media.iatiseguros.com/wp-content/uploads/2019/10/04012100/que-hacer-colombia-1.jpg'; // URL por defecto si no hay imagen
                     cityCard.innerHTML = `
                         <div class="card">
                             <div class="card-body d-flex flex-column">

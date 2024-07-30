@@ -2,8 +2,8 @@ const params = new URLSearchParams(window.location.search);
 const departmentId = params.get('department'); // Obtener el ID del departamento de la URL
 const apiUrl = `https://api-colombia.com/api/v1/Department/${departmentId}`; // URL de la API para obtener detalles del departamento
 const citiesUrl = `https://api-colombia.com/api/v1/Department/${departmentId}/cities`; // URL para obtener ciudades del departamento
-//const naturalAreasUrl = `https://api-colombia.com/api/v1/Department/${departmentId}/naturalareas`; // URL para obtener áreas naturales del departamento
-const naturalAreasUrl = `https://api-colombia.com/api/v1/NaturalArea`; // URL para obtener áreas naturales del departamento
+const naturalAreasUrl = `https://api-colombia.com/api/v1/Department/${departmentId}/naturalareas`; // URL para obtener áreas naturales del departamento
+//const naturalAreasUrl = `https://api-colombia.com/api/v1/NaturalArea`; // URL para obtener áreas naturales del departamento
 // Función para obtener los detalles del departamento
 fetch(apiUrl)
     .then(response => response.json())
@@ -169,18 +169,24 @@ fetch(apiUrl)
             });
     }
 
+    function normalizeString(str) {
+        return str
+            .normalize("NFD") // Normaliza la cadena
+            .replace(/[\u0300-\u036f]/g, "") // Elimina los acentos
+            .toLowerCase(); // Convierte a minúsculas
+    }
 
 function filterCards() {
     const cityCheckbox = document.getElementById('ciudad');
     const areaCheckbox = document.getElementById('areas_naturales');
-    const searchInput = document.getElementById('search-input').value.toLowerCase();
+    const searchInput = normalizeString(document.getElementById('search-input').value);
 
     const cityCards = document.querySelectorAll('.city-card');
     const areaCards = document.querySelectorAll('.area-card');
 
     // Mostrar u ocultar tarjetas de ciudades
     cityCards.forEach(card => {
-        const cardTitle = card.querySelector('.card-title').textContent.toLowerCase();
+        const cardTitle = normalizeString(card.querySelector('.card-title').textContent);
         const shouldDisplay = (cityCheckbox.checked || !cityCheckbox.checked && !areaCheckbox.checked) &&
                              (cardTitle.includes(searchInput));
         card.style.display = shouldDisplay ? 'block' : 'none';
@@ -188,7 +194,7 @@ function filterCards() {
 
     // Mostrar u ocultar tarjetas de áreas naturales
     areaCards.forEach(card => {
-        const cardTitle = card.querySelector('.card-title').textContent.toLowerCase();
+        const cardTitle = normalizeString(card.querySelector('.card-title').textContent);
         const shouldDisplay = (areaCheckbox.checked || !cityCheckbox.checked && !areaCheckbox.checked) &&
                              (cardTitle.includes(searchInput));
         card.style.display = shouldDisplay ? 'block' : 'none';

@@ -63,7 +63,7 @@ button:hover {
 }
 
 #imgtabla:hover {
-    transform: scale(3);
+    transform: scale(2.5);
 }
 
 .nav-link {
@@ -92,4 +92,19 @@ footer {
 #imagenhome{
     width:8rem;
     margin-right: 0;
+}
+
+#mensajeNoResultados{
+    text-align: center;
+    color: red;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    background-color: azure;
+    padding: 1rem;
+    border-radius: 10px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+
 }

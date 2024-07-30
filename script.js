@@ -1,6 +1,12 @@
 // script.js
 const urlCountry = 'https://api-colombia.com/api/v1/Country/Colombia';
 
+function normalizeString(str) {
+    return str
+        .normalize("NFD") // Normaliza la cadena
+        .replace(/[\u0300-\u036f]/g, "") // Elimina los acentos
+        .toLowerCase(); // Convierte a minúsculas
+}
 // Función para obtener la descripción del país
 fetch(urlCountry)
     .then(response => response.json())
@@ -78,6 +84,8 @@ fetch(urlDepartment)
        
     };
 
+    
+
 function displayDepartments(departments) {
     const container = document.getElementById('departments-container');
     container.innerHTML = '';
@@ -99,13 +107,16 @@ function displayDepartments(departments) {
         </div>
     `;
 
-    card.setAttribute('data-name', department.name.toLowerCase());
+    card.setAttribute('data-name', normalizeString(department.name)) ;
     container.appendChild(card);
     });
 }
 
+
+
+
 function filterDepartments() {
-    const input = document.getElementById('search').value.toLowerCase();
+    const input = normalizeString(document.getElementById('search').value);
     const cards = document.querySelectorAll('#departments-container .card');
     cards.forEach(card => {
         const text = card.getAttribute('data-name');

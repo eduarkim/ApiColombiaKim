@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "name": "Área Natural Única",
+    "description": "Área geográfica que, por poseer condiciones especiales de flora o gea es un escenario natural raro.",
+"imageUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkycmhIffr48_Fx5XG7uo8lbPyQKKeHBgZVA&s"
+  },
+  {
+    "id": 2,
+    "name": "Reserva Natural",
+    "description": "Área geográfica en la cual existen condiciones primitivas de flora, fauna y gea, y está destinada a la conservación, investigación y estudio de sus riquezas naturales.",
+    "imageUrl":"https://cdn.lavoz.com.ar/sites/default/files/styles/landscape_565_318/public/nota_periodistica/Colombia_04_1614726383.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Áreas de Recreación",
+    "description": "Espacio geográfico en el que paisajes y ecosistemas estratégicos en la escala regional mantienen su función, aunque su estructura, composición hayan sido modificadas con un potencial significativo de recuperación y cuyos valores naturales y culturales se ponen a disposición humana para destinarlos a la restauración, uso sostenible, conocimiento y disfrute. Son declaradas y administradas por las CAR.",
+  "imageUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2cB3DBPL-eGKYlSZb48-txTtHmcaUNSUZaA&s"
+  },
+  {
+    "id": 4,
+    "name": "Distritos de Conservación de Suelos",
+    "description": "Área geográfica en el que paisajes y ecosistemas estratégicos en escala regional mantienen su función, aunque su estructura, composición hayan sido modificadas y aportan esencialmente a la generación de bienes y servicios ambientales cuyos valores naturales y culturales se ponen a disposición humana para destinarlos a su preservación, restauración, conocimiento y disfrute. Su declaración y administración corresponde a las CAR.",
+  "imageUrl":"https://wwfeu.awsassets.panda.org/img/018_caqueta_2018__luisbarretophotos_06149_2__baja_687096.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Distritos Nacionales de Manejo Integrado",
+    "description": "Área geográfica en escala regional declarados y administrados por el Ministerio de Ambiente y Desarrollo Sostenible en el que los paisajes y ecosistemas mantienen su composición y función, aunque su estructura haya sido modificada y cuyos valores naturales y culturales se ponen a disposición humana para su uso sostenible, preservación, restauración, conocimiento y disfrute.",
+   "imageUrl":"https://www.parquesnacionales.gov.co/wp-content/uploads/2023/05/Cinaruco.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Parque Nacional Natural",
+    "description": "La declaración de Áreas Protegidas del Sistema de Parques corresponde al Ministerio de Ambiente y su administración y manejo a Parques Nacionales Naturales.",
+    "imageUrl":"https://voydeviaje.lavoz.com.ar/resizer/gcvtHYvFNAE8MNrhJsOJXfkb-5E=/0x0:0x0/980x640/filters:quality(80):format(webp)/cloudfront-us-east-1.images.arcpublishing.com/grupoclarin/TK77H42RPZA3RE7ZMBDA22CE5U.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Parques Naturales Regionales",
+    "description": "Área geográfica en el que paisajes y ecosistemas estratégicos en escala regional mantienen la estructura, composición y función, así como los procesos ecológicos y evolutivos que los sustentan y cuyos valores naturales y culturales se ponen a disposición humana para destinarlos a su preservación, restauración, conocimiento y disfrute. Su declaración y administración corresponde a las CAR.",
+    "imageUrl":"https://old.parquesnacionales.gov.co/portal/wp-content/uploads/2013/06/Sandra_Esguerra1.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Reserva Natural de la Sociedad Civil",
+    "description": "Parte o todo del área de un inmueble que conserve una muestra de ecosistema natural y sea manejado bajo principios de sustentabilidad en el uso de los recursos naturales y que por voluntad libre de su propietario se designa para su uso sostenible, preservación o restauración con vocación a largo plazo. Es iniciativa del propietario registrar la totalidad o parte de su inmueble como RNSC.",
+    "imageUrl":"https://old.parquesnacionales.gov.co/portal/wp-content/uploads/2015/09/s02.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Reservas Forestales Protectoras Nacionales",
+    "description": "Ecosistemas estratégicos en escala nacional declarados por el Ministerio de Ambiente y Desarrollo Sostenible que podrán ser destinados a la preservación, uso sostenible (hace referencia a la obtención de los frutos secundarios del bosque en lo relacionado con las actividades de aprovechamiento forestal), restauración, conocimiento y disfrute. ",
+    "imageUrl":"https://cdn.biodiversidadla.org/var/biodiversidadla_org/storage/images/objetos_relacionados/image_folder/gbpgnnwgiupjjhi-556x313-nopad/814193-1-esl-ES/GbpgnnwGIupJjHi-556x313-noPad_xlarge.jpg"
+  },
+  {
+    "id": 11,
+    "name": "Reservas Forestales Protectoras Regionales",
+    "description": "Ecosistemas estratégicos en escala regional declarados y administrados por las CAR que podrán ser destinados a la preservación, uso sostenible (hace referencia a la obtención de los frutos secundarios del bosque en lo relacionado con las actividades de aprovechamiento forestal), restauración, conocimiento y disfrute. ",
+    "imageUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKIwbENQi8xz4vDB0N20I4QJxC8cxzW8hSAQ&s"
+  },
+  {
+    "id": 12,
+    "name": "Santuario de Fauna",
+    "description": "Área geográfica dedicada a preservar especies o comunidades de animales silvestres, para conservar recursos genéticos de la fauna nacional.",
+    "imageUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAc16ZXrTf8JQ1CR9w53pKpiM_82LTe70MBQ&s"
+  },
+  {
+    "id": 13,
+    "name": "Santuario de Fauna y Flora",
+    "description": "Área geográfica dedicada a preservar especies o cumunidades de animales silvestres y vegetales con fines de conservación genéticos.",
+    "imageUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_c7iAOOpD0_sHLXug9vCI0Qxpj3yXDqBzrw&s"
+  },
+  {
+    "id": 14,
+    "name": "Santuario de Flora",
+    "description": "Área geográfica dedicada a preservar especies o comunidades vegetales para conservar recursos genéticos de la flora nacional.",
+    "imageUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJtGHerq6-cJF89RqbbktAKzag8R_JM9shYQ&s"
+  },
+  {
+    "id": 15,
+    "name": "Vía Parque",
+    "description": "Faja de terreno con carretera, que posee bellezas panorámicas singulares o valores naturales o culturales, conservada para fines de educación y esparcimiento.",
+    "imageUrl":"https://imgs.mongabay.com/wp-content/uploads/sites/25/2018/06/26032429/Obs-de-Aves-768x512.jpg"
+  }
+]
